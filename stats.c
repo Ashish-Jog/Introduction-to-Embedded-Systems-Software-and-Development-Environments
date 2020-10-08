@@ -58,95 +58,37 @@ void draw_linebreaks()
 void print_array(unsigned char arr[])
 {
 		
-		printf("\nThe Original array is :\n");	
-		for (int counter=0; counter<SIZE; counter++)
-		{
-		  printf("test[%d] : %u \n",counter,arr[counter]);
-		}
+		
 		
 }
 
 void find_maximum(unsigned char arr[])
 {
-		int maxValHolder = arr[0], i=0, maxIndexHolder=0;		
-		for( i=1; i<SIZE; i++ ) 
-		{
-		   if(arr[i]>maxValHolder)	
-		   {
-		    maxValHolder = arr[i];
-		    maxIndexHolder=i;
-		    
-		   }
-		}
-		printf("\nMax Value : %d At Index : %d\n",maxValHolder,maxIndexHolder);
 		
 }
 
 void find_minimum(unsigned char arr[])
 {
-		int minValHolder = arr[0], i=0, minIndexHolder=0;		
-		for( i=1; i<SIZE; i++ ) 
-		{
-		   if(arr[i]<minValHolder)	
-		   {
-		    minValHolder = arr[i];
-		    minIndexHolder=i;
-		    
-		   }
-		}
-		printf("\nMin Value : %d At Index : %d\n",minValHolder,minIndexHolder);
+		
 		
 }
 
 void find_mean(unsigned char arr[])
 {
-		int sum = 0, i=0;
-		int mean = 0;
-		for(i=0;i<SIZE;i++)
-		{
-		  sum += arr[i];		
-		}
-		mean = sum/(SIZE);
-		printf("\nMean : %d\n", mean);
+		
 				
 }
 
 
 void find_median( )
 {
-	    if(SIZE%2 != 0)
-	    {
-	      printf("\nMedian is : %u\n",sortedArray[SIZE/2]);	 // For odd list of numbers
-	    }
-	    else
-	    {
-	     
-              printf("\nMedian is : %u\n",((sortedArray[(SIZE/2)-1]+sortedArray[(SIZE/2)])/2)); // For even list of numbers	    
-	    }
+	   
 	   				
 }
 
 void sort_array(unsigned char arr[])
 {
-		int i=0, j=0, temp=0;
-		for(i=0;i<SIZE;i++)
-		{
-			for(j=i+1;j<SIZE;j++)
-			{
-			   	if(arr[i]>arr[j])
-			   	{
-			   	  temp = arr[j];
-			   	  arr[j]=arr[i];
-			   	  arr[i]=temp;
-			   	}	
-		   	}
-		}
-		printf("\nSorted Array is : \n");
-		for(i=0;i<SIZE;i++)
-		{
-		sortedArray[i] = arr[i];
-		printf("\n%u\n",sortedArray[i]);	
-		}
+		
 }
 		
 
